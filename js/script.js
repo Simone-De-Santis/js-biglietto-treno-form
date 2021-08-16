@@ -15,6 +15,7 @@ var ageField = document.getElementById("age");
 var button = document.getElementById("generated-ticket");
 
 // elementi ticket
+var ticketSection = document.getElementById("ticket-section");
 var passagerNameElement = document.getElementById("passeger-name");
 var discountElement = document.getElementById("discount");
 var carElement = document.getElementById("car");
@@ -44,4 +45,6 @@ button.addEventListener("click", function () {
   carElement.innerHTML = carNumber;
   trainCodElement.innerHTML = "98989889";
   priceElement.innerHTML = price;
+
+  ticketSection.classList.remove("hidden");
 });
